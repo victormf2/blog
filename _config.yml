@@ -27,7 +27,7 @@ github_username: victormf2
 name: Victor Machado
 repository: victormf2/blog
 author:
-  name: *name # *name is a YAML reference pointing to the &anchor earlier
+  name: Victor Machado
   avatar: "/assets/img/profile.jpg"
   bio: "Tenho um gato chamado Opala e outro gato chamado Chevette."
   location: "São Paulo"
@@ -51,10 +51,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/victormf2"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/victor-machado-de-franca"
+      url: "https://github.com/victormf2/blog"
 date_locale: pt
 search: true
 lunr:
@@ -86,6 +83,7 @@ exclude:
   - license.html
   - README.md
   - serve.ps1
+  - scripts/
 
 defaults:
   # _pages
