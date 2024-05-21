@@ -24,11 +24,42 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://victormf2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: victormf2
+name: Victor Machado
+repository: victormf2/blog
+author:
+  name: *name # *name is a YAML reference pointing to the &anchor earlier
+  avatar: "/assets/img/profile.jpg"
+  bio: "Tenho um gato chamado Opala e outro gato chamado Chevette."
+  location: "São Paulo"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/victormf2"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/victor-machado-de-franca"
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: sunrise
+locale: pt-BR
+date_format: "%-d de %B de %Y"
+enable_copy_code_button: true
+atom_feed:
+  hide: true
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/victormf2"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/victor-machado-de-franca"
+date_locale: pt
+
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
+  - jekyll-date-localization
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -37,14 +68,32 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE
+  - license.html
+  - README.md
+  - serve.ps1
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: true
+      related: true
+      show_date: true
