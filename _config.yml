@@ -56,6 +56,9 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/victor-machado-de-franca"
 date_locale: pt
+search: true
+lunr:
+  search_within_pages: true
 
 plugins:
   # - jekyll-feed
@@ -85,6 +88,13 @@ exclude:
   - serve.ps1
 
 defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
   # _posts
   - scope:
       path: ""

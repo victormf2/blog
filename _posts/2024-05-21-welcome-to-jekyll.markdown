@@ -1,7 +1,7 @@
 ---
 title: "Welcome to Jekyll!"
-date: 2024-05-21 01:43:45 -0300
-categories: jekyll update
+date: 2024-04-21 01:43:45 -0300
+last_modified_at: 2024-05-21 00:00:00 -0300
 ---
 
 Change You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
