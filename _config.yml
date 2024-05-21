@@ -82,8 +82,9 @@ exclude:
   - LICENSE
   - license.html
   - README.md
-  - serve.ps1
   - scripts/
+  - package.json
+  - pnpm-lock.yaml
 
 defaults:
   # _pages

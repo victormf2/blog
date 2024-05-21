@@ -2,17 +2,21 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "bundle exec jekyll serve --livereload",
+    "dev": "bundle exec jekyll serve --livereload --drafts",
+    "build": "bundle exec jekyll build",
     "add-dates": "node ./scripts/add_dates.js",
-    "prepare": "husky"
+    "prepare": "husky",
+    "draft": "node ./scripts/create_draft.js",
+    "post": "node ./scripts/create_post_from_draft.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "date-fns": "^3.6.0",
+    "enquirer": "^2.4.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "yaml": "^2.4.2"
