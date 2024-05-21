@@ -21,8 +21,8 @@ async function createDraft() {
 ---
 title: ${title}
 ---
-  
-  `.trimStart()
+
+`.trimStart()
 
   fs.writeFileSync(file, fileContent)
 
