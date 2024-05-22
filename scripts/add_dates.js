@@ -1,6 +1,6 @@
 import { format as dateFnsFormat } from 'date-fns/format'
 import fs from 'fs'
-import { readFrontmatter, writeFrontmatter } from './frontmatter'
+import { readFrontmatter, writeFrontmatter } from './frontmatter.js'
 
 function addDates() {
   const fileNames = process.argv.slice(2)

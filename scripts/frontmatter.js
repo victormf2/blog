@@ -1,5 +1,4 @@
 import fs from 'fs'
-import os from 'os'
 import YAML from 'yaml'
 
 /**
@@ -34,7 +33,12 @@ export function writeFrontmatter(file, frontmatter) {
   if (!fileContent.startsWith('---')) {
     fs.writeFileSync(
       file,
-      `---${os.EOL}${frontmatterContent}---${os.EOL}${os.EOL}${fileContent}`,
+      `
+---
+${frontmatterContent}
+---
+
+${fileContent}`.trimStart(),
     )
     return
   }
@@ -43,7 +47,12 @@ export function writeFrontmatter(file, frontmatter) {
   if (frontMatterTerminatorIndex < 0) {
     fs.writeFileSync(
       file,
-      `---${os.EOL}${frontmatterContent}---${os.EOL}${os.EOL}${fileContent}`,
+      `
+---
+${frontmatterContent}
+---
+
+${fileContent}`.trimStart(),
     )
     return
   }
@@ -54,6 +63,9 @@ export function writeFrontmatter(file, frontmatter) {
 
   fs.writeFileSync(
     file,
-    `---${os.EOL}${frontmatterContent}---${fileContentAfterFrontMatter}`,
+    `
+---
+${frontmatterContent}
+---${fileContentAfterFrontMatter}`.trimStart(),
   )
 }

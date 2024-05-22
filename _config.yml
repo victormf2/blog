@@ -21,37 +21,37 @@
 title: Blog do Ninito
 description: >- # this means to ignore newlines until "baseurl:"
   Tenho um gato chamado Opala e outro gato chamado Chevette.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://victormf2.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /blog # the subpath of your site, e.g. /blog
+url: https://victormf2.github.io # the base hostname & protocol for your site, e.g. http://example.com
 github_username: victormf2
 name: Victor Machado
-repository: victormf2/blog
+repository: https://github.com/victormf2/blog
 author:
   name: Victor Machado
-  avatar: "/assets/img/profile.jpg"
-  bio: "Tenho um gato chamado Opala e outro gato chamado Chevette."
-  location: "São Paulo"
+  avatar: /assets/img/profile.jpg
+  bio: Tenho um gato chamado Opala e outro gato chamado Chevette.
+  location: São Paulo
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/victormf2"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/victor-machado-de-franca"
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/victormf2
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/victor-machado-de-franca
 
 # Build settings
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: sunrise
 locale: pt-BR
-date_format: "%-d de %B de %Y"
+date_format: '%-d de %B de %Y'
 enable_copy_code_button: true
 atom_feed:
   hide: true
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/victormf2/blog"
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/victormf2/blog
 date_locale: pt
 search: true
 lunr:
@@ -89,14 +89,14 @@ exclude:
 defaults:
   # _pages
   - scope:
-      path: ""
+      path: ''
       type: pages
     values:
       layout: single
       author_profile: true
   # _posts
   - scope:
-      path: ""
+      path: ''
       type: posts
     values:
       layout: single
