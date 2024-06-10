@@ -1,8 +1,7 @@
 ---
 title: Como eu criei um blog usando Jekyll, Node.js e um pre-commit hook
 date: 2024-06-10 07:35:56 -0300
-last_modified_at: 2024-06-10 07:35:56 -0300
-
+last_modified_at: 2024-06-10 07:39:35 -0300
 ---
 
 Trabalho com programação desde 2011, ou seja, já tenho mais de uma década de experiência com esse negócio. Um belo dia eu decidi que seria legal compartilhar um pouco do meu conhecimento com o mundo. Então eu resolvi criar um blog.

@@ -27,7 +27,7 @@ export function readFrontmatter(file) {
 }
 
 export function writeFrontmatter(file, frontmatter) {
-  const frontmatterContent = YAML.stringify(frontmatter)
+  const frontmatterContent = YAML.stringify(frontmatter).trim()
   const fileContent = fs.readFileSync(file, { encoding: 'utf-8' }).trimStart()
 
   if (!fileContent.startsWith('---')) {
