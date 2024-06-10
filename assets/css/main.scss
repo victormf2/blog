@@ -6,4 +6,24 @@ search: false
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@import 'minimal-mistakes'; // main partials
+
+@mixin blockquote($blockquote-color) {
+  border-left-color: $blockquote-color;
+}
+
+.blockquote__primary {
+  @include blockquote($primary-color);
+}
+.blockquote__info {
+  @include blockquote($info-color);
+}
+.blockquote__warning {
+  @include blockquote($warning-color);
+}
+.blockquote__success {
+  @include blockquote($success-color);
+}
+.blockquote__danger {
+  @include blockquote($danger-color);
+}
